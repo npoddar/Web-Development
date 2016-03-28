@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title></title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div id="header_container">
+	<div id="lighthouse">
+		<div id="header">
+			<a href="index.html"><img src="img/logo.png" id="logo" /></a>
+			<div id="topnav">
+				<a href="#">Home</a> |
+				<a href="#">Contact Us</a> |
+				1855 Holland Rd #C, Maumee OH 43537
+			</div>
+			<div id="plans">
+				<a href="#">Home</a>
+				<a href="#">Services</a>
+				<a href="#">Contact Us</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+		<div id="flash">
+			<div id="flash_carriers">
+				<a href="#">Health Insurance</a>
+				<img src="img/flashdiv.png" />
+				<a href="#">Financial Planning </a>
+				<img src="img/flashdiv.png" />
+				<a href="#">Life Insurance</a>
+				<img src="img/flashdiv.png" />
+				<a href="#">Long Term Care</a>
+				<img src="img/flashdiv.png" />
+				<a href="#">Veterans Benefits</a>
+			</div>
+			<div id="flash_content">
+				<img src="img/flash_slide1.png" />
+				<img src="img/flash_slide1.png" />
+				<img src="img/flash_slide1.png" />
+			</div>
+			<!--Slideshow-->
+			<style>
+				#flash_content img {
+					position:absolute;
+					top:0;
+					left:0;
+					z-index:8;
+				}
+
+				#flash_content img.active {
+					z-index:10;
+				}
+
+				#flash_content img.last-active {
+					z-index:9;
+				}
+			</style>
+			<script>
+				function slideSwitch() {
+					var $active = $('#flash_content img.active');
+
+					if ( $active.length == 0 ) $active = $('#flash_contentimg:last');
+
+					var $next =  $active.next().length ? $active.next()
+						: $('#flash_content img:first');
+
+					$active.addClass('last-active');
+
+					$next.css({opacity: 0.0})
+						.addClass('active')
+						.animate({opacity: 1.0}, 1000, function() {
+							$active.removeClass('active last-active');
+						});
+				}
+
+				$(function() {
+					setInterval( "slideSwitch()", 6000 );
+				});
+			</script>
+			<!--End Slideshow-->
+		</div>
+	</div>
+</div>
+
+<div id="body_container">
+	<div id="body">
+	
+		<div class="column">
+			<div class="feature">
+				<img src="img/feature1.png" class="floatleft" />
+				<strong>Lorem ipsum snobi</strong>
+				Nam libero tempore, cum solnobis est liber.Nam libero tempore, cum soluta nobid.
+			</div>
+			<h2>About Beacon Insurance</h2>
+			<hr class="hrf1a916" />
+			<p>Nam libero tempore, cum soluta nobis est libero poiip u tempore, cum soluta nobis est</p>
+			<p>Nam libero tempore, cum soluta nobis est libero poiip u tempore, cum soluta nobis est</p>
+			<p>Nam libero tempore, cum soluta nobis est libero poiip u tempore, cum soluta nobis est</p>
+			<p>Nam libero tempore, cum soluta nobis est libero poiip u tempore, cum soluta nobis est</p>
+			<p>Nam libero tempore, cum soluta nobis est libero poiip u tempore, cum soluta nobis est</p>
+			<hr class="hr115d93" />
+			<a href="#"><img src="img/learn_more.png" class="btn" /></a>
+		</div>
+		
+		<div class="column">
+			<div class="feature">
+				<img src="img/feature2.png" class="floatleft" />
+				<strong>Lorem ipsum snobi</strong>
+				Nam libero tempore, cum solnobis est liber.Nam libero tempore, cum soluta nobid.
+			</div>
+			<h2>Latest News</h2>
+			<hr class="hrf1a916" />
+			<p>Nam libero tempore, cum soluta nobis est libero poiip u tempore, cum soluta nobis est</p>
+			<p>Nam libero tempore, cum soluta nobis est libero poiip u tempore, cum soluta nobis est</p>
+			<p>Nam libero tempore, cum soluta nobis est libero poiip u tempore, cum soluta nobis est</p>
+			<p>Nam libero tempore, cum soluta nobis est libero poiip u tempore, cum soluta nobis est</p>
+			<p>Nam libero tempore, cum soluta nobis est libero poiip u tempore, cum soluta nobis est</p>
+			<hr class="hr115d93" />
+			<a href="#"><img src="img/read_all_news.png" class="btn" /></a>
+		</div>
+		
+		<div class="column">
+			<div class="feature">
+				<img src="img/feature3.png" class="floatleft" />
+				<strong>Lorem ipsum snobi</strong>
+				Nam libero tempore, cum solnobis est liber.Nam libero tempore, cum soluta nobid.
+			</div>
+			<h2>Upcoming Events</h2>
+			<hr class="hrf1a916" />
+			<p>Nam libero tempore, cum soluta nobis est libero poiip u tempore, cum soluta nobis est</p>
+			<p>Nam libero tempore, cum soluta nobis est libero poiip u tempore, cum soluta nobis est</p>
+			<p>Nam libero tempore, cum soluta nobis est libero poiip u tempore, cum soluta nobis est</p>
+			<p>Nam libero tempore, cum soluta nobis est libero poiip u tempore, cum soluta nobis est</p>
+			<p>Nam libero tempore, cum soluta nobis est libero poiip u tempore, cum soluta nobis est</p>
+			<hr class="hr115d93" />
+			<a href="#"><img src="img/view_all_events.png" class="btn" /></a>
+		</div>
+	</div>
+</div>
+
+<div id="footer_container">
+	<div id="footer">
+		<ul id="testimonials">
+			<li class="first">Testimonials</li>
+			<li>Nam libero tempore</li>
+			<li>Nam libero tempore</li>
+			<li>Nam libero tempore</li>
+			<li>Nam libero tempore</li>
+			<li>Nam libero tempore</li>
+		</ul>
+		<img src="img/div.png" class="div" />
+		<ul id="recent_blog_posts">
+			<li class="first">Recent Blog Posts</li>
+			<li>Nam libero tempore</li>
+			<li>Nam libero tempore</li>
+			<li>Nam libero tempore</li>
+			<li>Nam libero tempore</li>
+			<li>Nam libero tempore</li>
+		</ul>
+		<img src="img/div.png" class="div" />
+		<div id="footer_right">
+			<a href="#"><img src="img/newsletter.png" class="btn" /></a>
+			<hr class="hrffffff" />
+			<a href="#"><img src="img/contact_us.png" class="btn" /></a>
+			<hr class="hrffffff" />
+			<span id="address">
+				1655 Holland Road, Suite C <br />
+				Maumee, OH 43537 <br />
+				419-482-0280 <br />
+				Toll Free: 419-872-7671 <br />
+			</span>
+		</div>
+		<div id="footer_bottom">
+			Copyright 2010. Beacon Health Insurance, Inc. | <a href="#">Website Support</a>
+			<span class="floatright">Designed by NGF Marketing Solutions</span>
+		</div>
+	</div>
+</div>
+
+</body>
+
+</html>
