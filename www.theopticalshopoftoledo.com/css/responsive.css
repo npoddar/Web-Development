@@ -1,0 +1,172 @@
+
+
+@media screen and (max-width: 960px) {
+	
+	img {
+		max-width: 100%;
+	}
+	body {
+		background: #000;
+	}
+	body.secondary {
+		background: #000;
+	}
+	
+	/* Header */
+		#header {
+			width: 100%;
+		}
+
+	/* Navigation */
+		#navigation_container {
+			background-color: #000000;
+		}
+		#navigation {
+			width: 100%;
+		}
+		#navigation ul {
+			padding: 0;
+			margin: 0;
+		}
+		#navigation ul li {
+			display: block;
+			padding: 0;
+		}
+		#navigation ul li a {
+			display: block;
+			padding: 0.5em 0;
+		}
+	
+	/* Rotator */
+		#rotator_container {
+			display: none;
+		}
+	
+	/* Featured */
+		#featured_container {
+			background: #000;
+		}
+		#featured {
+			width: 100%;
+			padding: 0;
+			border: 0;
+		}
+		#featured .feature {
+			width: 21%;
+			margin: 2%;
+			padding: 0;
+		}
+
+	/* Content */
+		#content_container {
+			background: #fff;
+		}
+		#content {
+			width: 95%;
+		}
+		body.secondary #content {
+			margin-top: 50px;
+			padding-top: 15px;
+			width: 95%;
+		}
+		div.wrap {
+			width: 100%;
+		}
+		.column {
+			width: 33%;
+			margin: 0;
+		}
+		.column .column-title {
+			padding: 0;
+			width: auto;
+			text-align: center;
+		}
+		.column .column-txt {
+			padding: 2em;
+			width: auto;
+		}
+		.column .column-txt .img {
+			padding: 0;
+		}
+		#sec-rotator {
+			height: auto;
+			width: 95%;
+			padding: 0;
+			border: 0;
+		}
+		#sec-rotator img {
+			border: 1px solid #45413A;
+			display: block;
+		}
+		#gallery {
+			width: 89%;
+		}
+		#gallery-cnt {
+			width: 87%;
+			margin: 0 auto;
+			display: block;
+		}
+		#thumbs_right {
+			width: 5%;
+			float: right;
+		}
+		#thumbs_left {
+			width: 5%;
+			float: left;
+		}
+		#primary img {
+			max-width: 50%;
+		}
+		
+	/* Footer */
+		#footer-columns {
+			background: #fff;
+		}
+		#footer {
+			width: 100%;
+		}
+		#ftr-lft, #ftr-rgt {
+			float: none;
+			width: 100%;
+			text-align: center;
+		}
+		
+}
+
+@media screen and (max-width: 700px) {
+
+	/* Header */
+		#top-info .floatleft, #top-info .floatright {
+			display: block;
+			float: none;
+			margin-bottom: 0.25em;
+			text-align: center;
+		}
+		
+	/* Content */
+		.column {
+			width: 95%;
+			margin: 0 auto 1em;
+			float: none;
+			text-align: center;
+		}
+		.column .column-txt {
+			padding: 0;
+		}
+		.column .column-title {
+		}
+		ul.ngfrss {
+			padding: 0;
+			margin: 0;
+		}
+		
+	/* Featured */
+		#featured .feature {
+			width: 96%;
+			margin: 2% 2% 1em 2%;
+			padding: 0;
+			float: none;
+		}
+		
+
+}
