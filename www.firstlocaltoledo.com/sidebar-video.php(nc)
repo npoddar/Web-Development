@@ -1,0 +1,68 @@
+<?php
+	/*
+	if (strtoupper(get_field('area')) == 'ANN ARBOR' || strtoupper(get_field('location')) == 'ANN ARBOR') {
+		include 'sidebar-video-ann-arbor.php';
+	} elseif(strtoupper(get_field('area')) == 'TOLEDO' || strtoupper(get_field('location')) == 'TOLEDO') {
+		include 'sidebar-video-toledo.php';
+	} else {
+		?>
+			<?php query_posts('category_name=videos'); ?>
+			<?php if (have_posts()) { ?>
+				<?php the_post(); ?>
+				<div id="abec_video_sidebar_container">
+					<h2>
+						<a href="/video-ask-the-expert/">View More</a>
+						Ask the Expert
+					</h2>
+					<iframe id="abec_video_sidebar" type="text/html" width="300" height="225" src="http://www.youtube.com/embed/<?php Print get_field('video_id'); ?>" frameborder="0"></iframe>
+					
+				</div>
+			<?php } ?>
+			<?php wp_reset_query(); ?>
+		
+		<?php
+	}
+	*/
+?>
+	<style>
+		div.clear {
+			height:10px;
+		}
+	</style>
+    
+    <div class="clear"> <br /> </div>
+
+	<a href="/northwest-ohio-restaurant-guide/" id="abec_first_local_sidebar_link"><img src="<?php Print get_template_directory_uri(); ?>/images/Ohio_Restaurant_Guide1.jpg" /></a>
+    
+    <a href="/made-in-ohio/" id="abec_first_local_sidebar_link"><img src="<?php Print get_template_directory_uri(); ?>/images/Made_In_Ohio1.jpg" /></a>
+    
+    <a href="/the-home-grown/" id="abec_first_local_sidebar_link"><img src="<?php Print get_template_directory_uri(); ?>/images/HomeGrown_Produce1.jpg" /></a>
+    
+    <a href="/first-local-toledo-ohio/" id="abec_first_local_sidebar_link"><img src="<?php Print get_template_directory_uri(); ?>/images/first-localv2.png" /></a>
+	<!-- insert topmost item-->
+    
+
+<div id="abec_video_sidebar_container">
+
+	<h2>
+		<a href="/video-ask-the-expert/">View All</a>
+		Ask the Expert
+		<div class="subtitle">Video Series</div>
+	</h2>
+	<ul id="abec_video_sidebar_links">
+		<li><a href="/video-ask-the-expert-business-to-business">Business to Business</a></li>
+		<li><a href="/video-ask-the-expert-health-and-wellness">Health and Wellness</a></li>
+		<li><a href="/video-ask-the-expert-home">Home</a></li>
+		<li><a href="/video-ask-the-expert-money">Money</a></li>
+	</ul>
+</div>
+
+<a href="/sunflowers-for-seniors/" id="abec_first_local_sidebar_link"><img src="<?php Print get_template_directory_uri(); ?>/images/sunflowers-for-seniors.jpg"  /></a>
+
+<a href="/pumpkins-for-kids/" id="abec_first_local_sidebar_link"><img src="<?php Print get_template_directory_uri(); ?>/images/pumpkins-for-kids.jpg"  /></a>
+
+<a href="/christmas-and-easter-cards/" id="abec_first_local_sidebar_link"><img src="<?php Print get_template_directory_uri(); ?>/images/Christmas_and_Easter_Cards1.jpg"  /></a>
+
+<a href="<?php print get_template_directory_uri(); ?>/images/Fundraising.jpg" id="abec_first_local_sidebar_link"><img src="<?php Print get_template_directory_uri(); ?>/images/Fundraising1.jpg"  /></a>
+
+<a href="<?php print get_template_directory_uri(); ?>/images/What's_New.jpg" id="abec_first_local_sidebar_link"><img src="<?php Print get_template_directory_uri(); ?>/images/What's_New1.jpg"  /></a>
